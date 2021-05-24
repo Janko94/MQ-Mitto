@@ -39,7 +39,7 @@ namespace CAP.Controllers
             try
             {
                 
-                 DateTime from;
+                DateTime from;
                 DateTime to;
                 if (DateTime.TryParse(dateFrom, CultureInfo.InvariantCulture, DateTimeStyles.None, out from)
                     && DateTime.TryParse(dateTo, CultureInfo.InvariantCulture, DateTimeStyles.None, out to))

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cap:
+    image: ${DOCKER_REGISTRY-}cap
+    build:
+      context: .
+      dockerfile: CAP/Dockerfile

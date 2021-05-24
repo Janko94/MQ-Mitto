@@ -8,12 +8,6 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 COPY ["CAP/CAP.csproj", "CAP/"]
-COPY ["Service/Service.csproj", "Service/"]
-COPY ["Interface/Interface.csproj", "Interface/"]
-COPY ["Model/Model.csproj", "Model/"]
-COPY ["Repository/Repository.csproj", "Repository/"]
-COPY ["Business/Business.csproj", "Business/"]
-COPY ["Common/Common.csproj", "Common/"]
 RUN dotnet restore "CAP/CAP.csproj"
 COPY . .
 WORKDIR "/src/CAP"
