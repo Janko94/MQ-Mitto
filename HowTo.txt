@@ -1,0 +1,13 @@
+SQL:
+
+Create CountryCode and SMS table and insert corresponding data (execute Mitto Sql.sql script)
+
+
+Configuration files:
+
+1. appsettings.json
+	- ConnectionString: Connecting string to the SQL database
+	- MQ:Server: Url to MQ server(Kafka server)
+	- MQ:DefaultGroup: Name of default consumer group
+	- MessageService: What service will be used to read messages ("LogInfo" Service - 0, "ProcessMessage" Service - 1)
+	- DateTimeFormat: Format of the "Date time To" date in "Sent.json/etc." Url
